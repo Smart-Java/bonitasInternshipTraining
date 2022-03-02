@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:list_item_cart/pages/cart_list_item_page.dart';
+import 'package:list_item_cart/pages/counter_page.dart';
 import 'package:list_item_cart/pages/list_items_page.dart';
 
 void main() {
@@ -12,7 +13,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: '/',
+      // initialRoute: '/',
+      home: CounterAppPage(),
       title: 'List Cart Items',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
@@ -20,7 +22,7 @@ class MyApp extends StatelessWidget {
         accentColor: Colors.purpleAccent,
       ),
       routes: {
-        '/' : (context) => ListItemsPage(),
+        // '/' : (context) => ListItemsPage(),
         CartListItemPage.cartListItemRoute : (context) => CartListItemPage(),
       },
     );
