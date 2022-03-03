@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:list_item_cart/pages/cart_list_item_page.dart';
 import 'package:list_item_cart/pages/counter_page.dart';
 import 'package:list_item_cart/pages/list_items_page.dart';
+import 'package:list_item_cart/pages/placeholder_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       // initialRoute: '/',
-      home: CounterAppPage(),
+      home: PlaceHolderPage(),
       title: 'List Cart Items',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
